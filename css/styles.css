@@ -48,12 +48,12 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 30, 30, 30;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 0, 0, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -61,8 +61,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 500;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #f5f5f7;
+  --bs-body-bg: #000;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -77,12 +77,6 @@
   --bs-link-hover-color: #212cc0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -317,7 +311,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #f5f5f7;
   text-align: left;
 }
 
@@ -487,6 +481,73 @@ progress {
   display: none !important;
 }
 
+.device-iphone-13-pro-silver-container {
+    width: 283px;
+    height: 565px;
+}
+.device-iphone-13-pro-silver-container .device-hardware{
+        display: block;
+        position: absolute;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+@media only screen and (max-width: 1068px)
+.device-iphone-13-pro-silver-container .device-hardware {
+    background-image: url(/assets/elements/hardware/iphone_13_pro_silver/medium.png?156454);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.device-iphone-13-pro-silver-container .device-hardware {
+    background-image: url(/assets/elements/hardware/iphone_13_pro_silver/large.png?156454);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.device-iphone-13-pro-silver-container {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+}
+
+.device-iphone-13-pro-silver-container .device-screen {
+    display: block;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.device-iphone-13-pro-silver-container .device-screen {
+    top: 13.2px;
+    left: 17.9px;
+    width: 248px;
+    height: 537px;
+    transform: scale(1);
+}
+
+/**, *:before, *:after {*/
+/*    box-sizing: inherit;*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, input, textarea, select, button {
+    font-synthesis: none;
+    -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    text-align: left;
+}
+
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -592,7 +653,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #f5f5f7;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -614,6 +675,8 @@ progress {
 
 .figure {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .figure-img {
@@ -623,7 +686,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #f5f5f7;
 }
 
 .container,
@@ -1988,7 +2051,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #f5f5f7;
 }
 
 .form-control {
@@ -1999,7 +2062,7 @@ progress {
   font-weight: 500;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #000;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2021,7 +2084,7 @@ progress {
 }
 .form-control:focus {
   color: #212529;
-  background-color: #fff;
+  background-color: #000;
   border-color: #949bf8;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(41, 55, 240, 0.25);
@@ -2030,15 +2093,15 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #f5f5f7;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #f5f5f7;
   opacity: 1;
 }
 .form-control:disabled {
-  background-color: #e9ecef;
+  background-color: #222;
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -2853,7 +2916,7 @@ textarea.form-control-lg {
   --bs-btn-hover-border-color: #E93E11;
   --bs-btn-focus-shadow-rgb: 73, 85, 242;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #212cc0;
+  --bs-btn-active-bg: #E93E11;
   --bs-btn-active-border-color: #E93E11;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
@@ -3125,7 +3188,7 @@ textarea.form-control-lg {
   --bs-btn-hover-border-color: transparent;
   --bs-btn-active-color: var(--bs-link-hover-color);
   --bs-btn-active-border-color: transparent;
-  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-color: #f5f5f7;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 73, 85, 242;
@@ -3239,7 +3302,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
-  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-color: #f5f5f7;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
   position: absolute;
@@ -3611,7 +3674,7 @@ textarea.form-control-lg {
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
-  --bs-nav-link-disabled-color: #6c757d;
+  --bs-nav-link-disabled-color: #f5f5f7;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
@@ -3736,8 +3799,8 @@ textarea.form-control-lg {
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-color: rgba(245, 245, 246, 1);
+  --bs-navbar-brand-hover-color: rgba(245, 245, 246, 1);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -4472,9 +4535,9 @@ textarea.form-control-lg {
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-bg: ;
   --bs-breadcrumb-border-radius: ;
-  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-divider-color: #f5f5f7;
   --bs-breadcrumb-item-padding-x: 0.5rem;
-  --bs-breadcrumb-item-active-color: #6c757d;
+  --bs-breadcrumb-item-active-color: #f5f5f7;
   display: flex;
   flex-wrap: wrap;
   padding: var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);
@@ -5178,7 +5241,7 @@ textarea.form-control-lg {
   --bs-toast-border-color: var(--bs-border-color-translucent);
   --bs-toast-border-radius: 0.375rem;
   --bs-toast-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --bs-toast-header-color: #6c757d;
+  --bs-toast-header-color: #f5f5f7;
   --bs-toast-header-bg: rgba(255, 255, 255, 0.85);
   --bs-toast-header-border-color: rgba(0, 0, 0, 0.05);
   width: var(--bs-toast-max-width);
@@ -6687,7 +6750,7 @@ textarea.form-control-lg {
 
 .text-bg-light {
   color: #000 !important;
-  background-color: RGBA(248, 249, 250, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(21, 21, 21, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-dark {
@@ -8091,7 +8154,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #f5f5f7 !important;
 }
 
 .text-black-50 {
@@ -10866,7 +10929,7 @@ section {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #fff;
+  background-color: #212121;
 }
 #mainNav .navbar-brand {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10877,13 +10940,13 @@ section {
 #mainNav .navbar-toggler {
   font-size: 0.875rem;
   padding: 0.75rem 1rem;
-  color: #7C0A1A;
+  color: #f5f5f7;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #7C0A1A;
+  color: #f5f5f7;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #7C0A1A;
+  color: #f5f5f7;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
   color: #E93E11;
@@ -10946,27 +11009,6 @@ section {
   left: 0%;
   width: 100%;
   height: 100%;
-}
-
-section.cta {
-  position: relative;
-  padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
-  background-position: center;
-  background-size: cover;
-}
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-section.cta:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .icon-feature {
@@ -11082,9 +11124,9 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 .masthead {
-  background-color: #f8f9fa;
-  padding-top: 9.5rem;
-  padding-bottom: 5rem;
+  background-color: #000;
+  padding-top: 11rem;
+  padding-bottom: 6rem;
 }
 .masthead .masthead-device-mockup {
   display: flex;

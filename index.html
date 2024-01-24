@@ -8,14 +8,16 @@
         <title>CapybaraPay - Never miss a sale</title>
         <link rel="icon" type="image/x-icon" href="assets/img/bear.svg" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+<!--        <link href="css/apple.css" rel="stylesheet" />-->
         <link href="css/styles.css" rel="stylesheet" />
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -33,10 +35,10 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">How it works</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Pricing</a></li>
                     </ul>
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" onclick="location.href='mailto:csabanemeth@capybarapay.com';">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Contact us</span>
+                            <span class="small">Contact us</span></a>
                         </span>
                     </button>
                 </div>
@@ -50,7 +52,7 @@
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
                             <h1 class="display-1 lh-1 mb-3">CapybaraPay, never miss a sale.</h1>
-                            <p class="lead fw-normal text-muted mb-5">Boost your business to the next level. Accept card payments on your phone without hardware costs!</p>
+                            <p class="lead fw-normal text-muted mb-5">Take your business to the next level. Accept contactless payments with only an iPhone.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
 <!--                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>-->
                                 <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
@@ -67,21 +69,20 @@
                                         <stop class="gradient-end-color" offset="100%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
-                            <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo.mp4" type="video/mp4" /></video>
-                                    </div>
-                                </div>
+                                <circle cx="50" cy="50" r="50"></circle></svg>
+                            
+                            
+                            <div class="device-wrap device-iphone-13-pro-silver-container device-medium-for-small">
+                                <picture class="device-screen screen-hero" role="img">
+                                    <source media="(max-width:1068px)" srcset="assets/img/screen-hero.jpg">
+<!--                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo.mp4" type="video/mp4" /></video>-->
+                                    <img src="assets/img/screen-hero.jpg" width="100%">
+                                </picture>
+                                <figure class="device-hardware" data-hires-status="pending" style="background-image: url(&quot;assets/img/iPhone13.png&quot;);"></figure>
                             </div>
+                            
+<!--                            <div class="device-wrapper">-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -92,16 +93,10 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h3 fs-3 text-white mb-4">Welcome to our website!</div>
-                        <div class="h3 fs-4 text-white mb-4">At Capybarapay.com, we are proud to introduce our innovative mobile application that transforms your mobile device into a powerful point of sale (POS) device. With our cutting-edge technology, business owners can easily process payments, manage inventory, and track sales right from the palm of their hand.</div>
-                        <div class="h3 fs-4 text-white mb-4">In today's fast-paced business environment, convenience and efficiency are essential. Our mobile application empowers business owners to take their operations to the next level by eliminating the need for traditional point of sale systems. By simply installing our app on their mobile devices, they gain access to a fully functional POS system that can handle all their sales transactions with ease.</div>
-                        <div class="h3 fs-4 text-white mb-4">Our mobile app offers a wide range of features designed to streamline the sales process. It enables merchants to accept payments from various sources such as credit cards, debit cards, mobile wallets, and even contactless payments. Customers can now make purchases using their preferred payment method, making transactions faster and more convenient than ever before.</div>
-                        <div class="h3 fs-4 text-white mb-4">Another key advantage of our mobile application is the ability to generate real-time sales reports and analytics. Business owners can access detailed insights into their sales performance, track trends, and make data-driven decisions to optimize their operations. This information is crucial in identifying opportunities for growth and refining business strategies.</div>
-                        <div class="h3 fs-4 text-white mb-4">We understand the importance of security in today's digital landscape. That is why our mobile application incorporates robust security measures to protect sensitive customer information. We adhere to industry-standard security protocols to ensure that every transaction is secure and encrypted.</div>
-                        <div class="h3 fs-4 text-white mb-4">Whether you are a small business owner, a retail store, or even a food truck operator, our mobile application can revolutionize the way you do business. Say goodbye to expensive and cumbersome traditional POS systems, and say hello to the future of sales management with Capybarapay.com.</div>
-                        <div class="h3 fs-4 text-white mb-4">Contact us today to schedule a demo or get started with transforming your mobile device into a powerful point of sale device. Welcome to the future of sales management withCapybarapay.com!</div>
-                        <div class="h3 fs-3 text-white mb-4">"An intuitive solution that solves the only problem it was built for - card payment."</div>
-                        <div class="h3 fs-3 text-white mb-4">Csaba</div>
+                        <div class="h3 fs-3 text-white mb-4">An intuitive solution that solves the only problem it was built for - card payments.</div>
+                        <div class="h3 fs-4 text-white mb-4">CapybaraPay mobile app is secure, reliable and efficient. The optimal tool in today's fast-paced business environment, allowing you to focus on your business.</div>
+                        <div class="h3 fs-3 text-white mb-4"></div>
+    
                     </div>
                 </div>
             </div>
@@ -118,13 +113,13 @@
                                     <div class="text-center">
                                         <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Get the App</h3>
-                                        <p class="text-muted mb-0">Easy to use, state of the art app on your phone, no hardware accessory needed!</p>
+                                        <p class="text-muted mb-0">Easy to use, state of the art app on your phone. No hardware accessory needed!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
                                     <!-- Feature item-->
                                     <div class="text-center">
-                                        <i class="bi-wallet2 icon-feature text-gradient d-block mb-3"></i>
+                                        <i class="bi-key icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Log In</h3>
                                         <p class="text-muted mb-0">Log in with your existing Adyen or PayPal account!</p>
                                     </div>
@@ -136,7 +131,7 @@
                                     <div class="text-center">
                                         <i class="bi-credit-card icon-feature text-gradient d-block mb-3"></i>
                                         <h3 class="font-alt">Take payment</h3>
-                                        <p class="text-muted mb-0">Enter the amount and accept card payments wherever you are!</p>
+                                        <p class="text-muted mb-0">Enter the amount and Apple's Tap to Pay on iPhone will take care of the rest!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -160,21 +155,28 @@
                                         <stop class="gradient-end-color" offset="100%"></stop>
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-1 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="50" cy="50" r="50"></circle></svg
-                            ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
-                            <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
+                                <circle cx="50" cy="50" r="50"></circle></svg>
+                            
+                            <div class="device-wrap device-iphone-13-pro-silver-container device-medium-for-small">
+                                <picture class="device-screen screen-hero" role="img">
+                                    <source media="(max-width:1068px)" srcset="assets/img/screen-hero.jpg">
                                         <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo.mp4" type="video/mp4" /></video>
-                                    </div>
-                                </div>
+<!--                                        <img src="assets/img/screen-hero.jpg" width="100%">-->
+                                </picture>
+                                <figure class="device-hardware" data-hires-status="pending" style="background-image: url(&quot;assets/img/iPhone13.png&quot;);"></figure>
                             </div>
+                            
+<!--                            <div class="device-wrapper">-->
+<!--                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">-->
+<!--                                    <div class="screen bg-black">-->
+<!--                                        <!-- PUT CONTENTS HERE:-->-->
+<!--                                        <!-- * * This can be a video, image, or just about anything else.-->-->
+<!--                                        <!-- * * Set the max width of your media to 100% and the height to-->-->
+<!--                                        <!-- * * 100% like the demo example below.-->-->
+<!--                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo.mp4" type="video/mp4" /></video>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -186,7 +188,10 @@
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">Boost your sales with CapybaraPay</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">CapybaraPay offers instant secure card payments right on your phone for a monthly subsciption fee. To learn more please contact our sales team.</p>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">CapybaraPay is free for small merchants. That's right! Up to 50 transactions a month we don't take any additional fee on top of what your payment service provider takes. For more information on pricing please reach out to us.</p>
+                        <p/>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">To learn more about Tap to Pay on iPhone <a class="fw-normal text-muted"
+                            href="https://developer.apple.com/tap-to-pay/how-to-accept-payments/">here</a>.</p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/img/bear.svg" alt="..." /></div>
@@ -208,88 +213,15 @@
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Your Website 2023. All Rights Reserved.</div>
+                    <div class="mb-2">&copy; Capybara LTD 2024. All Rights Reserved.</div>
                     <a href="#!">Privacy</a>
                     <span class="mx-1">&middot;</span>
                     <a href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">FAQ</a>
                 </div>
             </div>
         </footer>
-        <!-- Feedback Modal-->
-        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
+        
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
