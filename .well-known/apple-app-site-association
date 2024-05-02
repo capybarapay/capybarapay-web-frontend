@@ -10,5 +10,8 @@
         ]
       }
     ]
-  }
+  },
+  "webcredentials": {
+    "apps": [ "DLR2W78324.com.capybara.testapp.mod" ]
+   }
 }
